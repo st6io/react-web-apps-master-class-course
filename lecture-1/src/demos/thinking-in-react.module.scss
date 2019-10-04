@@ -1,0 +1,157 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+
+  input {
+    width: 100%;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 0 8px;
+  }
+
+  button {
+    border-radius: 4px;
+
+    &:active,
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+
+.card {
+  border: 1px solid rgb(229, 233, 242);
+  border-radius: 4px;
+  padding: 8px;
+  width: 480px;
+  background: white;
+  margin: auto;
+}
+
+.row {
+  width: 100%;
+  margin: 0;
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+
+  .leftColumn,
+  .rightColumn {
+    flex: 1;
+  }
+
+  .leftColumn {
+    button {
+      margin-right: 4px;
+    }
+  }
+
+  .rightColumn {
+    text-align: right;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.st6 {
+  border: none;
+  background: transparent;
+  margin: 0 4px;
+  height: 2em;
+}
+
+h1 {
+  font-size: 1.3em;
+  padding: 0;
+  margin: 0 4px;
+}
+
+.githubImg {
+  width: 1em;
+  height: 1em;
+}
+
+.meme {
+  width: 100%;
+  height: 100%;
+  padding: 4px 8px;
+  display: block;
+  position: relative;
+
+  .topText,
+  .bottomText {
+    position: absolute;
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 0px 10px;
+    text-align: center;
+    width: 420px;
+    line-height: 1.2em;
+  }
+
+  $margin: 0.5em;
+  .topText {
+    top: $margin;
+  }
+  .bottomText {
+    bottom: $margin;
+  }
+
+  .memeImage {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.light {
+  background: #f9fafc;
+  color: #3c4858;
+
+  .card {
+    border: '1px solid';
+    border-color: #e5e9f2;
+    border-radius: 3px;
+    background-color: #fff;
+
+    button,
+    input {
+      color: inherit;
+      border-color: #e5e9f2;
+      background-color: #eff2f7;
+    }
+  }
+}
+
+.dark {
+  background: #8492a6;
+  color: #8492a6;
+
+  .card {
+    border: '1px solid';
+    border-color: #3c4858;
+    border-radius: 3px;
+    background-color: #1f2d3d;
+
+    button,
+    input {
+      color: #fff;
+      border-color: #3c4858;
+      background-color: #273444;
+    }
+  }
+}
