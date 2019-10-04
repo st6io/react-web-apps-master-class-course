@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Meme Component should match snapshot 1`] = `
+<div
+  className="meme"
+>
+  <div
+    className="topText"
+  >
+    some text
+  </div>
+  <div
+    className="bottomText"
+  >
+    another text
+  </div>
+  <img
+    alt="meme"
+    className="memeImage"
+    src="https://some.test.img/jpg"
+  />
+</div>
+`;

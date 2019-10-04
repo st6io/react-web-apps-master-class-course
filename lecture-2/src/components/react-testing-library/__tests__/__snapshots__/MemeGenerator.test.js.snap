@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MemeGenerator Component should match snapshot 1`] = `
+<div>
+  <div
+    class="container container"
+  >
+    <div
+      class="card card"
+    >
+      <div>
+        <div
+          class="row"
+        >
+          <input
+            name="topText"
+            type="text"
+            value="React"
+          />
+        </div>
+        <div
+          class="row"
+        >
+          <input
+            name="bottomText"
+            type="text"
+            value="is awesome!"
+          />
+        </div>
+        <div
+          class="row"
+        >
+          <div
+            class="leftColumn"
+          >
+            <button>
+              Via Url
+            </button>
+            <button
+              id="shuffle"
+            >
+              Shuffle
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="meme"
+      >
+        <div
+          class="topText"
+        >
+          React
+        </div>
+        <div
+          class="bottomText"
+        >
+          is awesome!
+        </div>
+        <img
+          alt="meme"
+          class="memeImage"
+          src="https://miro.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

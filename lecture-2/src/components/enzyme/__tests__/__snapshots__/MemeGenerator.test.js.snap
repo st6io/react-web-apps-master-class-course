@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MemeGenerator Component full rendering should match snapshot 1`] = `
+<MemeGenerator>
+  <Container
+    className="container"
+  >
+    <div
+      className="container container"
+    >
+      <Card
+        className="card"
+      >
+        <div
+          className="card card"
+        >
+          <MemeInput
+            bottomText="is awesome!"
+            onImageChange={[Function]}
+            onInputChange={[Function]}
+            topText="React"
+            url=""
+          >
+            <div>
+              <Row>
+                <div
+                  className="row"
+                >
+                  <input
+                    name="topText"
+                    onChange={[Function]}
+                    type="text"
+                    value="React"
+                  />
+                </div>
+              </Row>
+              <Row>
+                <div
+                  className="row"
+                >
+                  <input
+                    name="bottomText"
+                    onChange={[Function]}
+                    type="text"
+                    value="is awesome!"
+                  />
+                </div>
+              </Row>
+              <Row>
+                <div
+                  className="row"
+                >
+                  <div
+                    className="leftColumn"
+                  >
+                    <button
+                      onClick={[Function]}
+                    >
+                      Via Url
+                    </button>
+                    <button
+                      id="shuffle"
+                      onClick={[Function]}
+                    >
+                      Shuffle
+                    </button>
+                  </div>
+                </div>
+              </Row>
+            </div>
+          </MemeInput>
+          <Meme
+            bottomText="is awesome!"
+            image="https://miro.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png"
+            topText="React"
+          >
+            <div
+              className="meme"
+            >
+              <div
+                className="topText"
+              >
+                React
+              </div>
+              <div
+                className="bottomText"
+              >
+                is awesome!
+              </div>
+              <img
+                alt="meme"
+                className="memeImage"
+                src="https://miro.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png"
+              />
+            </div>
+          </Meme>
+        </div>
+      </Card>
+    </div>
+  </Container>
+</MemeGenerator>
+`;
+
+exports[`MemeGenerator Component should match snapshot 1`] = `
+<Container
+  className="container"
+>
+  <Card
+    className="card"
+  >
+    <MemeInput
+      bottomText="is awesome!"
+      onImageChange={[Function]}
+      onInputChange={[Function]}
+      topText="React"
+      url=""
+    />
+    <Meme
+      bottomText="is awesome!"
+      image="https://miro.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png"
+      topText="React"
+    />
+  </Card>
+</Container>
+`;

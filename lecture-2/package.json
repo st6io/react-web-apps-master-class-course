@@ -1,0 +1,91 @@
+{
+  "name": "cra-demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "4.1.0",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "react-scripts": "3.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src",
+    "format": "prettier --write src/**/*.{js,json,css,scss}",
+    "ci": "yarn lint && cross-env CI=true yarn test --coverage",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "cross-env CI=true lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "prettier --write",
+      "eslint --max-warnings=0",
+      "yarn test --bail --findRelatedTests",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js",
+      "!src/stories/**/*.js",
+      "!src/utils.js",
+      "!src/timers/**/*.js",
+      "!src/basic-mock/**/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.2.1",
+    "@storybook/addon-knobs": "^5.2.1",
+    "@storybook/addon-links": "^5.2.1",
+    "@storybook/addons": "^5.2.1",
+    "@storybook/cli": "^5.2.1",
+    "@storybook/react": "^5.2.1",
+    "@testing-library/react": "9.2.0",
+    "cross-env": "^6.0.2",
+    "enzyme": "3.10.0",
+    "enzyme-adapter-react-16": "1.14.0",
+    "husky": "^3.0.8",
+    "jest-enzyme": "7.1.1",
+    "lint-staged": "^9.4.1",
+    "node-sass": "4.12.0",
+    "prettier": "^1.18.2"
+  }
+}

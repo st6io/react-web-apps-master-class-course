@@ -1,0 +1,32 @@
+.meme {
+  width: 100%;
+  height: 100%;
+  padding: 4px 0px;
+  display: block;
+  position: relative;
+
+  .topText,
+  .bottomText {
+    position: absolute;
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 0px 10px;
+    text-align: center;
+    width: 100%;
+    line-height: 1.2em;
+  }
+
+  $margin: 0.5em;
+  .topText {
+    top: $margin;
+  }
+  .bottomText {
+    bottom: $margin;
+  }
+
+  .memeImage {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Row Component should match snapshot 1`] = `
+<div
+  className="row"
+>
+  <span>
+    Hello, World!
+  </span>
+</div>
+`;

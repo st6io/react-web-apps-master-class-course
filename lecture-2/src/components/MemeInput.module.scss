@@ -1,0 +1,14 @@
+.leftColumn,
+.rightColumn {
+  flex: 1;
+}
+
+.leftColumn {
+  button {
+    margin-right: 4px;
+  }
+}
+
+.rightColumn {
+  text-align: right;
+}

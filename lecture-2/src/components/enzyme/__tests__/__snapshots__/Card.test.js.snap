@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Component should match snapshot 1`] = `
+<div
+  className="card "
+>
+  <span>
+    Hello, World!
+  </span>
+</div>
+`;
+
+exports[`Card Component should match snapshot with className 1`] = `
+<div
+  className="card new-class-name"
+>
+  <span>
+    Hello, World!
+  </span>
+</div>
+`;

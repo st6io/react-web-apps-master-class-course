@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MemeInput Component should match snapshot 1`] = `
+<div
+  className="new-class-name"
+>
+  <Row>
+    <input
+      name="topText"
+      onChange={[Function]}
+      type="text"
+      value="Your excuses"
+    />
+  </Row>
+  <Row>
+    <input
+      name="bottomText"
+      onChange={[Function]}
+      type="text"
+      value="are lies!"
+    />
+  </Row>
+  <Row>
+    <div
+      className="leftColumn"
+    >
+      <button
+        onClick={[Function]}
+      >
+        Via Url
+      </button>
+      <button
+        id="shuffle"
+        onClick={[Function]}
+      >
+        Shuffle
+      </button>
+    </div>
+  </Row>
+</div>
+`;
+
+exports[`MemeInput Component should match snapshot when url toggled 1`] = `
+<div
+  className="new-class-name"
+>
+  <Row>
+    <input
+      name="topText"
+      onChange={[Function]}
+      type="text"
+      value="Your excuses"
+    />
+  </Row>
+  <Row>
+    <input
+      name="bottomText"
+      onChange={[Function]}
+      type="text"
+      value="are lies!"
+    />
+  </Row>
+  <Row>
+    <div
+      className="leftColumn"
+    >
+      <button
+        onClick={[Function]}
+      >
+        Via Url
+      </button>
+      <button
+        id="shuffle"
+        onClick={[Function]}
+      >
+        Shuffle
+      </button>
+    </div>
+  </Row>
+  <Row>
+    <input
+      name="url"
+      onChange={[Function]}
+      type="text"
+    />
+  </Row>
+</div>
+`;
