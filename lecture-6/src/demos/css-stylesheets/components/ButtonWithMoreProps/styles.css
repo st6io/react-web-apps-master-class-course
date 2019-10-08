@@ -61,8 +61,3 @@
   color: #000;
   background-color: lightgray;
 }
-
-/* primary large */
-.buttonWithMoreProps.warning {
-  background-color: orange;
-}

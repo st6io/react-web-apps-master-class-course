@@ -1,6 +1,7 @@
 import React from 'react';
 
-import ButtonWithMorePropsSpec from '../components/ButtonWithMorePropsSpec';
+import ButtonWithMorePropsSpec from 
+  '../components/ButtonWithMorePropsSpec';
 
 const ButtonWithMorePropsSpecDemo = () => (
   <div>

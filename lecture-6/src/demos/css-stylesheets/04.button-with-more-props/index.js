@@ -1,11 +1,14 @@
 import React from 'react';
 
-import ButtonWithMoreProps from '../components/ButtonWithMoreProps';
+import ButtonWithMoreProps from 
+  '../components/ButtonWithMoreProps';
 
 const ButtonWithMorePropsDemo = () => (
   <div>
     <h3>Sizes</h3>
-    <ButtonWithMoreProps>Small Button (Default)</ButtonWithMoreProps>
+    <ButtonWithMoreProps>
+      Small Button (Default)
+    </ButtonWithMoreProps>
     <ButtonWithMoreProps size="medium">
       Medium Button
     </ButtonWithMoreProps>
@@ -33,8 +36,8 @@ const ButtonWithMorePropsDemo = () => (
     </ButtonWithMoreProps>
 
     <h3>Combinations</h3>
-    <ButtonWithMoreProps size="large" variant="error">
-      Danger Button
+    <ButtonWithMoreProps size="medium" variant="success">
+      Medium Success Button
     </ButtonWithMoreProps>
   </div>
 );

@@ -1,6 +1,7 @@
 import React from 'react';
 
-import ButtonWithContent from '../components/ButtonWithContent';
+import ButtonWithContent from 
+  '../components/ButtonWithContent';
 
 const ButtonWithContentDemo = () => (
   <div>

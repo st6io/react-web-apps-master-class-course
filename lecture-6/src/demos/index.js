@@ -1,12 +1,13 @@
 // 1. Basic Concepts
 
 // 2. CSS Stylesheets
-import Button from "./css-stylesheets/01.button";
-import ButtonWithContent from "./css-stylesheets/02.button-with-content";
-import ButtonWithProps from "./css-stylesheets/03.button-with-props";
-import ButtonWithMoreProps from "./css-stylesheets/04.button-with-more-props";
-import ButtonWithMorePropsScss from "./css-stylesheets/05.button-with-more-props-scss";
-import ButtonWithMorePropsSpec from "./css-stylesheets/06.button-with-more-props-spec";
+import Button from './css-stylesheets/01.button';
+import ButtonWithContent from './css-stylesheets/02.button-with-content';
+import ButtonWithProps from './css-stylesheets/03.button-with-props';
+import ButtonWithMoreProps from './css-stylesheets/04.button-with-more-props';
+import ButtonWithMorePropsClassnames from './css-stylesheets/05.button-with-more-props-classnames';
+import ButtonWithMorePropsScss from './css-stylesheets/06.button-with-more-props-scss';
+import ButtonWithMorePropsSpec from './css-stylesheets/07.button-with-more-props-spec';
 
 // 3. CSS Modules
 
@@ -36,13 +37,18 @@ const demos = [
     component: ButtonWithMoreProps,
   },
   {
+    path: '/css-button-with-more-props-classnames',
+    name: '05. Button With More Props (CX)',
+    component: ButtonWithMorePropsClassnames,
+  },
+  {
     path: '/scss-button-with-more-props',
-    name: '05. Button With More Props (SCSS)',
+    name: '06. Button With More Props (SCSS)',
     component: ButtonWithMorePropsScss,
   },
   {
     path: '/spec-button-with-more-props',
-    name: '06. Button With More Props (CSS Spec)',
+    name: '07. Button With More Props (CSS Spec)',
     component: ButtonWithMorePropsSpec,
   },
 ];

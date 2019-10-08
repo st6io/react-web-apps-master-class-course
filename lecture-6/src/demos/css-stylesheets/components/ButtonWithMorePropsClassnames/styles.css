@@ -1,0 +1,72 @@
+.buttonWithMorePropsClassnames {
+  appearance: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  background-color: lightgray;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+  transition: all 0.3s ease-out;
+  border: 0;
+  cursor: pointer;
+}
+
+.buttonWithMorePropsClassnames:hover {
+  color: #fff;
+  background-color: darkgray;
+}
+
+/* medium */
+.buttonWithMorePropsClassnames.medium {
+  font-size: 1.5rem;
+}
+
+/* large */
+.buttonWithMorePropsClassnames.large {
+  font-size: 2rem;
+}
+
+/* primary */
+.buttonWithMorePropsClassnames.primary {
+  background-color: skyblue;
+}
+
+.buttonWithMorePropsClassnames.primary:hover {
+  background-color: deepskyblue;
+}
+
+/* error */
+.buttonWithMorePropsClassnames.error {
+  background-color: coral;
+}
+
+.buttonWithMorePropsClassnames.error:hover {
+  background-color: red;
+}
+
+/* success */
+.buttonWithMorePropsClassnames.success {
+  background-color: lime;
+}
+
+.buttonWithMorePropsClassnames.success:hover {
+  background-color: green;
+}
+
+/* disabled */
+.buttonWithMorePropsClassnames.disabled,
+.buttonWithMorePropsClassnames.disabled:hover {
+  opacity: 0.5;
+  color: #000;
+  background-color: lightgray;
+}
+
+/* primary large */
+.buttonWithMorePropsClassnames.warning {
+  background-color: orange;
+}
+
+.buttonWithMorePropsClassnames.warning:hover {
+  background-color: darkorange;
+}

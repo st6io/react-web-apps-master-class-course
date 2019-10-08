@@ -1,6 +1,7 @@
 import React from 'react';
 
-import ButtonWithMorePropsScss from '../components/ButtonWithMorePropsScss';
+import ButtonWithMorePropsScss from 
+  '../components/ButtonWithMorePropsScss';
 
 const ButtonWithMorePropsScssDemo = () => (
   <div>

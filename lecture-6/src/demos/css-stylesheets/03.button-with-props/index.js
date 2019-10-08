@@ -5,7 +5,9 @@ import ButtonWithProps from '../components/ButtonWithProps';
 const ButtonWithPropsDemo = () => (
   <div>
     <ButtonWithProps>Button</ButtonWithProps>
-    <ButtonWithProps primary>Primary Button</ButtonWithProps>
+    <ButtonWithProps primary>
+      Primary Button
+    </ButtonWithProps>
   </div>
 );
 
