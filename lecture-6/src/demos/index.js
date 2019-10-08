@@ -17,39 +17,64 @@ import ButtonWithMorePropsSpec from './css-stylesheets/07.button-with-more-props
 
 const demos = [
   {
-    path: '/css-button',
-    name: '01. Button',
-    component: Button,
+    title: 'Basic Concepts',
+    items: [],
   },
   {
-    path: '/css-button-with-content',
-    name: '02. Button With Content',
-    component: ButtonWithContent,
+    title: 'CSS Stylesheets',
+    items: [
+      {
+        path: '/css-button',
+        name: '01. Button',
+        component: Button,
+      },
+      {
+        path: '/css-button-with-content',
+        name: '02. Button With Content',
+        component: ButtonWithContent,
+      },
+      {
+        path: '/css-button-with-props',
+        name: '03. Button With Props',
+        component: ButtonWithProps,
+      },
+      {
+        path: '/css-button-with-more-props',
+        name: '04. Button With More Props',
+        component: ButtonWithMoreProps,
+      },
+      {
+        path: '/css-button-with-more-props-classnames',
+        name: '05. Button With More Props (CX)',
+        component: ButtonWithMorePropsClassnames,
+      },
+      {
+        path: '/css-button-with-more-props-scss',
+        name: '06. Button With More Props (SCSS)',
+        component: ButtonWithMorePropsScss,
+      },
+      {
+        path: '/css-button-with-more-props-spec',
+        name: '07. Button With More Props (CSS Spec)',
+        component: ButtonWithMorePropsSpec,
+      },
+    ],
   },
   {
-    path: '/css-button-with-props',
-    name: '03. Button With Props',
-    component: ButtonWithProps,
+    title: 'CSS Modules',
+    items: [],
   },
   {
-    path: '/css-button-with-more-props',
-    name: '04. Button With More Props',
-    component: ButtonWithMoreProps,
+    title: 'Inline Styling',
+    items: [],
   },
   {
-    path: '/css-button-with-more-props-classnames',
-    name: '05. Button With More Props (CX)',
-    component: ButtonWithMorePropsClassnames,
+    title: 'CSS In JS',
+    items: [],
   },
   {
-    path: '/scss-button-with-more-props',
-    name: '06. Button With More Props (SCSS)',
-    component: ButtonWithMorePropsScss,
-  },
-  {
-    path: '/spec-button-with-more-props',
-    name: '07. Button With More Props (CSS Spec)',
-    component: ButtonWithMorePropsSpec,
+    title: 'React UI Libraries',
+    items: [],
   },
 ];
 
