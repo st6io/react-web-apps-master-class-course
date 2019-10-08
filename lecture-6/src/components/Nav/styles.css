@@ -1,0 +1,19 @@
+.Nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Nav-link {
+  margin: 0.5rem 0;
+}
+
+.Nav-link > a {
+  color: #fff;
+  text-decoration: none;
+  transition: opacity .3s ease-out;
+}
+
+.Nav-link > a:hover {
+  opacity: 0.5;
+}

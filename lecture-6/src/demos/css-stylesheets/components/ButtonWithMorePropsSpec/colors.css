@@ -1,0 +1,12 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --primary: skyblue;
+  --primaryHover: deepskyblue;
+  --secondary: lightgray;
+  --secondaryHover: darkgray;
+  --error: coral;
+  --errorHover: red;
+  --success: lime;
+  --successHover: green;
+}
