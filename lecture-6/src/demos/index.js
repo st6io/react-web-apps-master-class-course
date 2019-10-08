@@ -42,7 +42,7 @@ const demos = [
   },
   {
     path: '/spec-button-with-more-props',
-    name: '05. Button With More Props (CSS Spec)',
+    name: '06. Button With More Props (CSS Spec)',
     component: ButtonWithMorePropsSpec,
   },
 ];
