@@ -1,58 +1,25 @@
 @import 'colors';
 @import 'utils';
+@import 'common';
 
 .buttonWithMorePropsScss {
-  appearance: none;
-  display: inline-block;
-  padding: 1rem 2rem;
-  margin: 1rem;
-  background-color: $btn-bgr-color;
-  font-size: 1rem;
-  font-weight: bold;
-  color: $black;
-  transition: all 0.3s ease-out;
-  border: 0;
-  cursor: pointer;
+  @extend %baseButton;
 
-  &:hover {
-    color: $white;
-    background-color: $btn-bgr-hover-color;
-  }
+  // variants
+  @each $variant, $bgColor in $btn-variants {
+    &.#{$variant} {
+      background-color: $bgColor;
 
-  /* medium */
-  &.medium {
-    font-size: 1.5rem;
-  }
-
-  /* large */
-  &.large {
-    font-size: 2rem;
-  }
-
-  /* primary */
-  &.primary {
-    background-color: $btn-bgr-primary-color;
-
-    &:hover {
-      background-color: $btn-bgr-primary-hover-color;
+      &:hover {
+        background-color: tint($bgColor, 25%);
+      }
     }
   }
 
-  /* error */
-  &.error {
-    background-color: $btn-bgr-error-color;
-
-    &:hover {
-      background-color: $btn-bgr-error-hover-color;
-    }
-  }
-
-  /* success */
-  &.success {
-    background-color: $btn-bgr-success-color;
-
-    &:hover {
-      background-color: $btn-bgr-success-hover-color;
+  // sizes
+  @each $size, $fontSize in $btn-sizes {
+    &.#{$size} {
+      font-size: $fontSize;
     }
   }
 
@@ -60,7 +27,7 @@
   &.disabled,
   &.disabled:hover {
     opacity: 0.5;
-    background-color: $btn-bgr-color;
+    background-color: $secondary;
     color: $black;
   }
 }

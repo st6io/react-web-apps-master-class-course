@@ -1,20 +1,7 @@
-// common
 $black: #000;
 $white: #fff;
+
 $primary: skyblue;
 $secondary: lightgray;
 $error: coral;
 $success: lime;
-
-// buttons
-$btn-bgr-color: $secondary;
-$btn-bgr-hover-color: tint($secondary, 10);
-
-$btn-bgr-primary-color: $primary;
-$btn-bgr-primary-hover-color: shade($primary, 25);
-
-$btn-bgr-error-color: $error;
-$btn-bgr-error-hover-color: shade($error, 25);
-
-$btn-bgr-success-color: $success;
-$btn-bgr-success-hover-color: shade($success, 25);
