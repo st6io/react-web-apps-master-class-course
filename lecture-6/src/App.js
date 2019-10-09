@@ -2,11 +2,10 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
 } from 'react-router-dom';
-import { flatMap } from 'lodash';
 
 import Nav from './components/Nav';
+import Routes from './components/Routes';
 import demos from './demos';
 
 import './App.css';
@@ -15,20 +14,12 @@ const App = () => (
   <Router>
     <div className="App">
       <div className="App-nav">
-        <Nav demos={demos} />
+        <Nav pages={demos} />
       </div>
 
       <div className="App-content">
         <Switch>
-          {flatMap(demos, ({ items }) =>
-            items.map(({ path, component }) => (
-              <Route
-                path={path}
-                key={path}
-                component={component}
-              />
-            )),
-          )}
+          <Routes pages={demos} />
         </Switch>
       </div>
     </div>

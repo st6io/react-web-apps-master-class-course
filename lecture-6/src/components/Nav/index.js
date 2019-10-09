@@ -1,14 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import { flatMap } from 'lodash';
 
+import { groupPropType } from '../propTypes';
+
 import './styles.css';
 
-const Nav = ({ demos }) => (
+const Nav = ({ pages }) => (
   <div>
     <h1>Styling with React</h1>
 
-    {flatMap(demos, ({ title, items }) => (
+    {flatMap(pages, ({ title, items }) => (
       <div key={title}>
         <h4 className="Nav-title">{title}</h4>
 
@@ -25,5 +28,9 @@ const Nav = ({ demos }) => (
     ))}
   </div>
 );
+
+Nav.propTypes = {
+  pages: PropTypes.arrayOf(groupPropType).isRequired,
+};
 
 export default Nav;
