@@ -1,5 +1,3 @@
-// 1. Basic Concepts
-
 // 2. CSS Stylesheets
 import ButtonDemo from './css-stylesheets/01.button';
 import ButtonWithContentDemo from './css-stylesheets/02.button-with-content';
@@ -16,14 +14,13 @@ import CardWithImageComposesDemo from './css-modules/02.card-with-image-composes
 import CardWithImageScssDemo from './css-modules/04.card-with-image-scss';
 
 // 4. Inline Styling
+import AlertDemo from './inline-styling/01.alert';
+import AlertWithHoverDemo from './inline-styling/02.alert-with-hover';
+import AlertWithVariantDemo from './inline-styling/03.alert-with-variant';
 
 // 5. CSS in JS
 
 const demos = [
-  {
-    title: 'Basic Concepts',
-    items: [],
-  },
   {
     title: 'CSS Stylesheets',
     items: [
@@ -34,32 +31,32 @@ const demos = [
       },
       {
         path: '/css-button-with-content',
-        name: '02. Button With Content',
+        name: '02. Button with Content',
         component: ButtonWithContentDemo,
       },
       {
         path: '/css-button-with-props',
-        name: '03. Button With Props',
+        name: '03. Button with Props',
         component: ButtonWithPropsDemo,
       },
       {
         path: '/css-button-with-more-props',
-        name: '04. Button With More Props',
+        name: '04. Button with More Props',
         component: ButtonWithMorePropsDemo,
       },
       {
         path: '/css-button-with-more-props-classnames',
-        name: '05. Button With More Props (CX)',
+        name: '05. Button with More Props (CX)',
         component: ButtonWithMorePropsClassnamesDemo,
       },
       {
         path: '/css-button-with-more-props-scss',
-        name: '06. Button With More Props (SCSS)',
+        name: '06. Button with More Props (SCSS)',
         component: ButtonWithMorePropsScssDemo,
       },
       {
         path: '/css-button-with-more-props-spec',
-        name: '07. Button With More Props (CSS Spec)',
+        name: '07. Button with More Props (CSS Spec)',
         component: ButtonWithMorePropsSpecDemo,
       },
     ],
@@ -74,24 +71,40 @@ const demos = [
       },
       {
         path: '/cssmodules-card-with-image',
-        name: '02. Card With Image',
+        name: '02. Card with Image',
         component: CardWithImageDemo,
       },
       {
         path: '/cssmodules-card-with-image-composes',
-        name: '03. Card With Image (Composes)',
+        name: '03. Card with Image (Composes)',
         component: CardWithImageComposesDemo,
       },
       {
         path: '/cssmodules-card-with-image-scss',
-        name: '04. Card With Image (SCSS)',
+        name: '04. Card with Image (SCSS)',
         component: CardWithImageScssDemo,
       },
     ],
   },
   {
     title: 'Inline Styling',
-    items: [],
+    items: [
+      {
+        path: '/inline-alert',
+        name: '01. Alert',
+        component: AlertDemo,
+      },
+      {
+        path: '/inline-alert-with-hover',
+        name: '02. Alert with Hover',
+        component: AlertWithHoverDemo,
+      },
+      {
+        path: '/inline-alert-with-variant',
+        name: '03. Alert with Variant',
+        component: AlertWithVariantDemo,
+      },
+    ],
   },
   {
     title: 'CSS In JS',

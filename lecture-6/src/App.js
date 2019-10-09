@@ -13,14 +13,14 @@ import './App.css';
 const App = () => (
   <Router>
     <div className="App">
-      <div className="App-nav">
-        <Nav pages={demos} />
-      </div>
-
       <div className="App-content">
         <Switch>
           <Routes pages={demos} />
         </Switch>
+      </div>
+
+      <div className="App-nav">
+        <Nav pages={demos} />
       </div>
     </div>
   </Router>

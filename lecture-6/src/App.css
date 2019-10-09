@@ -8,6 +8,7 @@
   background-color: #282c34;
   color: #fff;
   padding: 2rem;
+  overflow-y: auto;
 }
 
 .App-content {
