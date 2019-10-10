@@ -1,6 +1,6 @@
 @import 'colors.css';
 
-.buttonWithMorePropsSpec {
+.buttonWithVariantSpec {
   appearance: none;
   display: inline-block;
   padding: 1rem 2rem;
@@ -14,51 +14,51 @@
   cursor: pointer;
 }
 
-.buttonWithMorePropsSpec:hover {
+.buttonWithVariantSpec:hover {
   color: var(--white);
   background-color: var(--secondaryHover);
 }
 
 /* medium */
-.buttonWithMorePropsSpec.medium {
+.buttonWithVariantSpec.medium {
   font-size: 1.5rem;
 }
 
 /* large */
-.buttonWithMorePropsSpec.large {
+.buttonWithVariantSpec.large {
   font-size: 2rem;
 }
 
 /* primary */
-.buttonWithMorePropsSpec.primary {
+.buttonWithVariantSpec.primary {
   background-color: var(--primary);
 }
 
-.buttonWithMorePropsSpec.primary:hover {
+.buttonWithVariantSpec.primary:hover {
   background-color: var(--primaryHover);
 }
 
 /* error */
-.buttonWithMorePropsSpec.error {
+.buttonWithVariantSpec.error {
   background-color: var(--error);
 }
 
-.buttonWithMorePropsSpec.error:hover {
+.buttonWithVariantSpec.error:hover {
   background-color: var(--errorHover);
 }
 
 /* success */
-.buttonWithMorePropsSpec.success {
+.buttonWithVariantSpec.success {
   background-color: var(--success);
 }
 
-.buttonWithMorePropsSpec.success:hover {
+.buttonWithVariantSpec.success:hover {
   background-color: var(--successHover);
 }
 
 /* disabled */
-.buttonWithMorePropsSpec.disabled,
-.buttonWithMorePropsSpec.disabled:hover {
+.buttonWithVariantSpec.disabled,
+.buttonWithVariantSpec.disabled:hover {
   opacity: 0.5;
   background-color: var(--secondary);
   color: var(--black);

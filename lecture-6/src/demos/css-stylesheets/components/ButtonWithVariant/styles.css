@@ -1,4 +1,4 @@
-.buttonWithMoreProps {
+.buttonWithVariant {
   appearance: none;
   display: inline-block;
   padding: 1rem 2rem;
@@ -12,51 +12,51 @@
   cursor: pointer;
 }
 
-.buttonWithMoreProps:hover {
+.buttonWithVariant:hover {
   color: #fff;
   background-color: darkgray;
 }
 
 /* medium */
-.buttonWithMoreProps.medium {
+.buttonWithVariant.medium {
   font-size: 1.5rem;
 }
 
 /* large */
-.buttonWithMoreProps.large {
+.buttonWithVariant.large {
   font-size: 2rem;
 }
 
 /* primary */
-.buttonWithMoreProps.primary {
+.buttonWithVariant.primary {
   background-color: skyblue;
 }
 
-.buttonWithMoreProps.primary:hover {
+.buttonWithVariant.primary:hover {
   background-color: deepskyblue;
 }
 
 /* error */
-.buttonWithMoreProps.error {
+.buttonWithVariant.error {
   background-color: coral;
 }
 
-.buttonWithMoreProps.error:hover {
+.buttonWithVariant.error:hover {
   background-color: red;
 }
 
 /* success */
-.buttonWithMoreProps.success {
+.buttonWithVariant.success {
   background-color: lime;
 }
 
-.buttonWithMoreProps.success:hover {
+.buttonWithVariant.success:hover {
   background-color: green;
 }
 
 /* disabled */
-.buttonWithMoreProps.disabled,
-.buttonWithMoreProps.disabled:hover {
+.buttonWithVariant.disabled,
+.buttonWithVariant.disabled:hover {
   opacity: 0.5;
   color: #000;
   background-color: lightgray;

@@ -1,13 +1,13 @@
 import React from 'react';
 
-import CardWithImageComposes from '../components/CardWithImageComposes';
+import CardWithVariant from '../components/CardWithVariant';
 import nikolayImgSrc from "../images/nikolay.jpg";
 import kristinaImgSrc from "../images/kristina.jpg";
 import dimitarImgSrc from "../images/dimitar.jpg";
 
-const CardWithImagetDemo = () => (
+const CardWithVariantDemo = () => (
   <div>
-    <CardWithImageComposes
+    <CardWithVariant
       title="Nikolay Valchev"
       description="Software Craftsman"
       variant="primary"
@@ -17,9 +17,9 @@ const CardWithImagetDemo = () => (
       immense attention to detail shines when he conducts
       code reviews and he is highly driven towards technical
       excellence. A React superstar!
-    </CardWithImageComposes>
+    </CardWithVariant>
 
-    <CardWithImageComposes
+    <CardWithVariant
       title="Kristina Koeva"
       description="Software Craftswoman"
       variant="error"
@@ -28,9 +28,9 @@ const CardWithImagetDemo = () => (
       Super-smart craftswoman who constantly strives for
       perfection and is never afraid to dig into the depths
       of a technical problem. React Native superstar!
-    </CardWithImageComposes>
+    </CardWithVariant>
 
-    <CardWithImageComposes
+    <CardWithVariant
       title="Dimitar Tsonev"
       description="Software Craftsman"
       variant="success"
@@ -39,8 +39,8 @@ const CardWithImagetDemo = () => (
       A team player with superior problem-solving skills,
       attention to detail, and customer-focused personality!
       React Native Master Craftsman!
-    </CardWithImageComposes>
+    </CardWithVariant>
   </div>
 );
 
-export default CardWithImagetDemo;
+export default CardWithVariantDemo;

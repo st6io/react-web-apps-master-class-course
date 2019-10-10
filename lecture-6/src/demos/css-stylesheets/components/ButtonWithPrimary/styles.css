@@ -1,4 +1,4 @@
-.buttonWithProps {
+.buttonWithPrimary {
   appearance: none;
   display: inline-block;
   padding: 1rem 2rem;
@@ -11,16 +11,16 @@
   cursor: pointer;
 }
 
-.buttonWithProps:hover {
+.buttonWithPrimary:hover {
   color: #fff;
   background-color: darkgray;
 }
 
 /* primary */
-.buttonWithProps.primary {
+.buttonWithPrimary.primary {
   background-color: lightblue;
 }
 
-.buttonWithProps.primary:hover {
+.buttonWithPrimary.primary:hover {
   background-color: darkblue;
 }

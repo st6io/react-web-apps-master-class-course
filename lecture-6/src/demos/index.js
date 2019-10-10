@@ -1,17 +1,17 @@
 // 2. CSS Stylesheets
 import ButtonDemo from './css-stylesheets/01.button';
 import ButtonWithContentDemo from './css-stylesheets/02.button-with-content';
-import ButtonWithPropsDemo from './css-stylesheets/03.button-with-props';
-import ButtonWithMorePropsDemo from './css-stylesheets/04.button-with-more-props';
-import ButtonWithMorePropsClassnamesDemo from './css-stylesheets/05.button-with-more-props-classnames';
-import ButtonWithMorePropsScssDemo from './css-stylesheets/06.button-with-more-props-scss';
-import ButtonWithMorePropsSpecDemo from './css-stylesheets/07.button-with-more-props-spec';
+import ButtonWithPrimaryDemo from './css-stylesheets/03.button-with-primary';
+import ButtonWithVariantDemo from './css-stylesheets/04.button-with-variant';
+import ButtonWithVariantCxDemo from './css-stylesheets/05.button-with-variant-cx';
+import ButtonWithVariantScssDemo from './css-stylesheets/06.button-with-variant-scss';
+import ButtonWithVariantSpecDemo from './css-stylesheets/07.button-with-variant-spec';
 
 // 3. CSS Modules
 import CardDemo from './css-modules/01.card';
 import CardWithImageDemo from './css-modules/02.card-with-image';
-import CardWithImageComposesDemo from './css-modules/02.card-with-image-composes';
-import CardWithImageScssDemo from './css-modules/04.card-with-image-scss';
+import CardWithImageScssDemo from './css-modules/03.card-with-image-scss';
+import CardWithVariantDemo from './css-modules/04.card-with-variant';
 
 // 4. Inline Styling
 import AlertDemo from './inline-styling/01.alert';
@@ -35,29 +35,29 @@ const demos = [
         component: ButtonWithContentDemo,
       },
       {
-        path: '/css-button-with-props',
-        name: '03. Button with Props',
-        component: ButtonWithPropsDemo,
+        path: '/css-button-with-primary',
+        name: '03. Button with Primary',
+        component: ButtonWithPrimaryDemo,
       },
       {
-        path: '/css-button-with-more-props',
-        name: '04. Button with More Props',
-        component: ButtonWithMorePropsDemo,
+        path: '/css-button-with-variant',
+        name: '04. Button with Variant',
+        component: ButtonWithVariantDemo,
       },
       {
-        path: '/css-button-with-more-props-classnames',
-        name: '05. Button with More Props (CX)',
-        component: ButtonWithMorePropsClassnamesDemo,
+        path: '/css-button-with-variant-cx',
+        name: '05. Button with Variant (CX)',
+        component: ButtonWithVariantCxDemo,
       },
       {
-        path: '/css-button-with-more-props-scss',
-        name: '06. Button with More Props (SCSS)',
-        component: ButtonWithMorePropsScssDemo,
+        path: '/css-button-with-variant-scss',
+        name: '06. Button with Variant (SCSS)',
+        component: ButtonWithVariantScssDemo,
       },
       {
-        path: '/css-button-with-more-props-spec',
-        name: '07. Button with More Props (CSS Spec)',
-        component: ButtonWithMorePropsSpecDemo,
+        path: '/css-button-with-variant-spec',
+        name: '07. Button with Variant (CSS Spec)',
+        component: ButtonWithVariantSpecDemo,
       },
     ],
   },
@@ -75,9 +75,9 @@ const demos = [
         component: CardWithImageDemo,
       },
       {
-        path: '/cssmodules-card-with-image-composes',
-        name: '03. Card with Image (Composes)',
-        component: CardWithImageComposesDemo,
+        path: '/cssmodules-card-with-variant',
+        name: '03. Card with Variant (Composes)',
+        component: CardWithVariantDemo,
       },
       {
         path: '/cssmodules-card-with-image-scss',

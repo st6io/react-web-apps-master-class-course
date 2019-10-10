@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import cx from 'classnames';
 
 import './styles.css';
 
-const ButtonWithMorePropsSpec = ({
+const ButtonWithVariant = ({
   variant,
   size,
   disabled,
@@ -12,17 +11,15 @@ const ButtonWithMorePropsSpec = ({
 }) => (
   <button
     disabled={disabled}
-    className={cx('buttonWithMorePropsSpec', {
-      [variant]: variant,
-      [size]: size,
-      disabled,
-    })}
+    className={`buttonWithVariant
+      ${variant} ${size} ${disabled && 'disabled'}`
+    }
   >
     {children}
   </button>
 );
 
-ButtonWithMorePropsSpec.propTypes = {
+ButtonWithVariant.propTypes = {
   children: PropTypes.node.isRequired,
   variant: PropTypes.oneOf([
     'primary',
@@ -34,10 +31,10 @@ ButtonWithMorePropsSpec.propTypes = {
   disabled: PropTypes.bool,
 };
 
-ButtonWithMorePropsSpec.defaultProps = {
+ButtonWithVariant.defaultProps = {
   variant: 'secondary',
   size: 'small',
   disabled: false,
 };
 
-export default ButtonWithMorePropsSpec;
+export default ButtonWithVariant;

@@ -4,7 +4,7 @@ import { capitalize } from 'lodash';
 
 import styles from './styles.module.css';
 
-const CardWithImageComposes = ({
+const CardWithVariant = ({
   imageSrc,
   title,
   description,
@@ -36,7 +36,7 @@ const CardWithImageComposes = ({
   </div>
 );
 
-CardWithImageComposes.propTypes = {
+CardWithVariant.propTypes = {
   children: PropTypes.node.isRequired,
   variant: PropTypes.oneOf([
     'primary',
@@ -49,11 +49,11 @@ CardWithImageComposes.propTypes = {
   description: PropTypes.string,
 };
 
-CardWithImageComposes.defaultProps = {
+CardWithVariant.defaultProps = {
   variant: 'secondary',
   imageSrc: '',
   title: '',
   description: '',
 };
 
-export default CardWithImageComposes;
+export default CardWithVariant;

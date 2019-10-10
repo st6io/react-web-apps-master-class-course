@@ -1,4 +1,4 @@
-.buttonWithMorePropsClassnames {
+.buttonWithVariantCx {
   appearance: none;
   display: inline-block;
   padding: 1rem 2rem;
@@ -12,61 +12,61 @@
   cursor: pointer;
 }
 
-.buttonWithMorePropsClassnames:hover {
+.buttonWithVariantCx:hover {
   color: #fff;
   background-color: darkgray;
 }
 
 /* medium */
-.buttonWithMorePropsClassnames.medium {
+.buttonWithVariantCx.medium {
   font-size: 1.5rem;
 }
 
 /* large */
-.buttonWithMorePropsClassnames.large {
+.buttonWithVariantCx.large {
   font-size: 2rem;
 }
 
 /* primary */
-.buttonWithMorePropsClassnames.primary {
+.buttonWithVariantCx.primary {
   background-color: skyblue;
 }
 
-.buttonWithMorePropsClassnames.primary:hover {
+.buttonWithVariantCx.primary:hover {
   background-color: deepskyblue;
 }
 
 /* error */
-.buttonWithMorePropsClassnames.error {
+.buttonWithVariantCx.error {
   background-color: coral;
 }
 
-.buttonWithMorePropsClassnames.error:hover {
+.buttonWithVariantCx.error:hover {
   background-color: red;
 }
 
 /* success */
-.buttonWithMorePropsClassnames.success {
+.buttonWithVariantCx.success {
   background-color: lime;
 }
 
-.buttonWithMorePropsClassnames.success:hover {
+.buttonWithVariantCx.success:hover {
   background-color: green;
 }
 
 /* disabled */
-.buttonWithMorePropsClassnames.disabled,
-.buttonWithMorePropsClassnames.disabled:hover {
+.buttonWithVariantCx.disabled,
+.buttonWithVariantCx.disabled:hover {
   opacity: 0.5;
   color: #000;
   background-color: lightgray;
 }
 
 /* primary large */
-.buttonWithMorePropsClassnames.warning {
+.buttonWithVariantCx.warning {
   background-color: orange;
 }
 
-.buttonWithMorePropsClassnames.warning:hover {
+.buttonWithVariantCx.warning:hover {
   background-color: darkorange;
 }
