@@ -19,6 +19,11 @@ import AlertWithHoverDemo from './inline-styling/02.alert-with-hover';
 import AlertWithVariantDemo from './inline-styling/03.alert-with-variant';
 
 // 5. CSS in JS
+import ProgressDemo from './css-in-js/01.progress';
+import ProgressWithExtendDemo from './css-in-js/02.progress-with-extend';
+import ProgressWithVariantDemo from './css-in-js/03.progress-with-variant';
+import ProgressWithVariantThemeDemo from './css-in-js/04.progress-with-variant-theme';
+import ProgressWithVariantRadiumDemo from './css-in-js/05.progress-with-variant-radium';
 
 const demos = [
   {
@@ -108,11 +113,33 @@ const demos = [
   },
   {
     title: 'CSS In JS',
-    items: [],
-  },
-  {
-    title: 'React UI Libraries',
-    items: [],
+    items: [
+      {
+        path: '/cssinjs-progress',
+        name: '01. Progress',
+        component: ProgressDemo,
+      },
+      {
+        path: '/cssinjs-progress-with-extend',
+        name: '03. Progress (extend)',
+        component: ProgressWithExtendDemo,
+      },
+      {
+        path: '/cssinjs-progress-with-variant',
+        name: '03. Progress with Variant',
+        component: ProgressWithVariantDemo,
+      },
+      {
+        path: '/cssinjs-progress-with-variant-theme',
+        name: '04. Progress with Variant (theme)',
+        component: ProgressWithVariantThemeDemo,
+      },
+      {
+        path: '/cssinjs-progress-with-variant-radium',
+        name: '05. Progress with Variant (Radium)',
+        component: ProgressWithVariantRadiumDemo,
+      },
+    ],
   },
 ];
 

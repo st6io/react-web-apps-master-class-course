@@ -7,7 +7,7 @@
   width: 25rem;
   background-color: #282c34;
   color: #fff;
-  padding: 2rem;
+  padding: 1rem 2rem;
   overflow-y: auto;
 }
 
@@ -16,6 +16,6 @@
   flex: 1;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem 2rem;
   overflow-y: auto;
 }
