@@ -5,7 +5,7 @@ import AlertWithHover from '../components/AlertWithHover';
 const AlertWithHoverDemo = () => (
   <div>
     <AlertWithHover>
-      Some message!
+      Hover me!
     </AlertWithHover>
   </div>
 );
