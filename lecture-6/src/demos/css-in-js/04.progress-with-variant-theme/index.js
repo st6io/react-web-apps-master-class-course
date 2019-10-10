@@ -8,30 +8,34 @@ const ProgressWithVariantThemeDemo = () => {
   const [currentTheme, setCurrentTheme] = useState(theme);
 
   const handleClick = () => {
-    setCurrentTheme(currentTheme === theme ? themeAlt : theme);
-  }
+    setCurrentTheme(
+      currentTheme === theme ? themeAlt : theme,
+    );
+  };
 
   return (
     <ThemeProvider theme={currentTheme}>
-      <h3>Progress bars</h3>
-      <ProgressWithVariantTheme />
+      <>
+        <h3>Progress bars</h3>
+        <ProgressWithVariantTheme />
 
-      <ProgressWithVariantTheme
-        percentage={25}
-        variant="primary"
-      />
+        <ProgressWithVariantTheme
+          percentage={25}
+          variant="primary"
+        />
 
-      <ProgressWithVariantTheme
-        percentage={50}
-        variant="error"
-      />
+        <ProgressWithVariantTheme
+          percentage={50}
+          variant="error"
+        />
 
-      <ProgressWithVariantTheme
-        percentage={100}
-        variant="success"
-      />
+        <ProgressWithVariantTheme
+          percentage={100}
+          variant="success"
+        />
 
-      <button onClick={handleClick}>Change theme</button>
+        <button onClick={handleClick}>Change theme</button>
+      </>
     </ThemeProvider>
   );
 };
