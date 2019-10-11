@@ -7,6 +7,9 @@ import ButtonWithVariantCxDemo from './css-stylesheets/05.button-with-variant-cx
 import ButtonWithVariantScssDemo from './css-stylesheets/06.button-with-variant-scss';
 import ButtonWithVariantSpecDemo from './css-stylesheets/07.button-with-variant-spec';
 
+import ListDemo from './css-stylesheets/08.list';
+import ListWithSelectionDemo from './css-stylesheets/09.list-with-selection';
+
 // 3. CSS Modules
 import CardDemo from './css-modules/01.card';
 import CardWithImageDemo from './css-modules/02.card-with-image';
@@ -63,6 +66,16 @@ const demos = [
         path: '/css-button-with-variant-spec',
         name: '07. Button with Variant (CSS Spec)',
         component: ButtonWithVariantSpecDemo,
+      },
+      {
+        path: '/css-list-template-literal',
+        name: '08. List (Template Literal)',
+        component: ListDemo,
+      },
+      {
+        path: '/css-list-classnames',
+        name: '08. List (classnames)',
+        component: ListWithSelectionDemo,
       },
     ],
   },
