@@ -1,0 +1,39 @@
+type Subscription {
+  commentAdded(carId: ID!): Comment!
+}
+
+type Query {
+  me: User
+  allCars(take: Int, after: String): CarsConnection!
+  car(id: ID!): Car
+}
+
+type Mutation {
+  logIn(email: String!): String!
+  comment(carId: ID!, comment: String!): Comment!
+}
+
+type User {
+  id: ID!
+  email: String!
+}
+
+type CarsConnection {
+  cars: [Car!]!
+  hasMore: Boolean!
+  cursor: String
+}
+
+type Car {
+  id: ID!
+  maker: String!
+  model: String!
+  image: String!
+  comments: [Comment!]!
+}
+
+type Comment {
+  id: ID!
+  user: String!
+  comment: String!
+}

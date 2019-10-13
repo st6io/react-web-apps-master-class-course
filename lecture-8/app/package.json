@@ -1,0 +1,79 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/react-hooks": "3.0.0",
+    "@emotion/core": "10.0.21",
+    "@emotion/styled": "10.0.17",
+    "@reach/router": "1.2.1",
+    "@rebass/forms": "4.0.6",
+    "@rebass/layout": "4.0.6",
+    "@rebass/preset": "4.0.5",
+    "apollo-cache-inmemory": "1.6.2",
+    "apollo-client": "2.6.3",
+    "apollo-link": "1.2.13",
+    "apollo-link-context": "1.0.19",
+    "apollo-link-http": "1.5.15",
+    "apollo-link-ws": "1.0.19",
+    "apollo-utilities": "1.3.2",
+    "emotion": "10.0.17",
+    "emotion-theming": "10.0.19",
+    "graphql": "14.5.8",
+    "graphql-tag": "2.10.1",
+    "graphql-tag.macro": "2.0.1",
+    "graphql.macro": "1.4.2",
+    "lodash": "4.17.15",
+    "react": "16.9.0-alpha.0",
+    "react-dom": "16.9.0-alpha.0",
+    "react-icons": "3.7.0",
+    "react-router-dom": "5.1.2",
+    "react-scripts": "3.0.1",
+    "rebass": "4.0.6",
+    "subscriptions-transport-ws": "0.9.16"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "format": "prettier --write src/**/*.{js,json,css,scss}",
+    "lint": "eslint src"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "prettier --write",
+      "eslint --max-warnings=0",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@apollo/react-testing": "3.0.0",
+    "@testing-library/jest-dom": "4.0.0",
+    "@testing-library/react": "8.0.7",
+    "apollo": "2.16.3",
+    "husky": "3.0.9",
+    "lint-staged": "9.4.2",
+    "prettier": "1.18.2"
+  }
+}
