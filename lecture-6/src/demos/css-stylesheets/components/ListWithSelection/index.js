@@ -4,24 +4,20 @@ import cx from 'classnames';
 
 import './styles.css';
 
-const ListWithSelection = ({ items, selectedIndex: initialIndex }) => {
+const ListWithSelection = ({ items, selectedIndex }) => {
   const [
     currentIndex,
     setCurrentIndex,
-  ] = useState(initialIndex);
-
-  const handleClick = index => {
-    setCurrentIndex(index);
-  }
+  ] = useState(selectedIndex);
 
   return (
     <ul className="list">
       {items.map(({ name }, index) => (
         <li
           key={index}
-          onClick={() => handleClick(index)}
+          onClick={() => setCurrentIndex(index)}
           className={cx('listItem', {
-            selected: index === currentIndex,
+            'selected': index === currentIndex,
           })}
         >
           {name}
