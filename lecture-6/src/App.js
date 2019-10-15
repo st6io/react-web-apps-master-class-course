@@ -40,7 +40,7 @@ const App = () => {
           className="App-toggle"
           onClick={handleToggle}
         >
-          {menuOpened ? <FaBars /> : <FaTimes />}
+          {menuOpened ? <FaTimes /> : <FaBars />}
         </button>
       </div>
     </Router>
