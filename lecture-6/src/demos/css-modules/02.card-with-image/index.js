@@ -5,7 +5,7 @@ import nikolayImgSrc from "../images/nikolay.jpg";
 import kristinaImgSrc from "../images/kristina.jpg";
 import dimitarImgSrc from "../images/dimitar.jpg";
 
-const CardWithImagetDemo = () => (
+const CardWithImageDemo = () => (
   <div>
     <CardWithImage
       title="Nikolay Valchev"
@@ -40,4 +40,4 @@ const CardWithImagetDemo = () => (
   </div>
 );
 
-export default CardWithImagetDemo;
+export default CardWithImageDemo;
