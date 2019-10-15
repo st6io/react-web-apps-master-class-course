@@ -6,8 +6,6 @@
 .App-content {
   display: flex;
   flex: 1;
-  justify-content: center;
-  align-items: center;
   padding: 1rem 2rem;
   overflow-y: auto;
 }
