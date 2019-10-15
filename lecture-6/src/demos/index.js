@@ -33,9 +33,10 @@ const demos = [
     title: 'CSS Stylesheets',
     items: [
       {
-        path: '/css-button',
+        path: '/',
         name: '01. Button',
         component: ButtonDemo,
+        exact: true,
       },
       {
         path: '/css-button-with-content',

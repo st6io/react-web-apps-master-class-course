@@ -16,9 +16,9 @@ const Nav = ({ pages }) => (
         <h4 className="Nav-title">{title}</h4>
 
         <ul className="Nav-list">
-          {items.map(({ path, name }) => (
+          {items.map(({ path, name, exact }) => (
             <li key={path} className="Nav-item">
-              <NavLink className="Nav-link" to={path}>
+              <NavLink className="Nav-link" to={path} exact={exact}>
                 {name}
               </NavLink>
             </li>

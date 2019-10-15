@@ -8,11 +8,12 @@ import { groupPropType } from '../propTypes';
 const Routes = ({ pages }) => (
   <div>
     {flatMap(pages, ({ items }) =>
-      items.map(({ path, component }) => (
+      items.map(({ path, component, exact }) => (
         <Route
           path={path}
           key={path}
           component={component}
+          exact={exact}
         />
       )),
     )}
