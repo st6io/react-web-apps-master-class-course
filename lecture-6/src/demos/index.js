@@ -1,4 +1,4 @@
-// 2. CSS Stylesheets
+// 1. CSS Stylesheets
 import ButtonDemo from './css-stylesheets/01.button';
 import ButtonWithContentDemo from './css-stylesheets/02.button-with-content';
 import ButtonWithPrimaryDemo from './css-stylesheets/03.button-with-primary';
@@ -10,18 +10,18 @@ import ButtonWithVariantSpecDemo from './css-stylesheets/07.button-with-variant-
 import ListDemo from './css-stylesheets/08.list';
 import ListWithSelectionDemo from './css-stylesheets/09.list-with-selection';
 
-// 3. CSS Modules
+// 2. CSS Modules
 import CardDemo from './css-modules/01.card';
 import CardWithImageDemo from './css-modules/02.card-with-image';
 import CardWithImageScssDemo from './css-modules/03.card-with-image-scss';
 import CardWithVariantDemo from './css-modules/04.card-with-variant';
 
-// 4. Inline Styling
+// 3. Inline Styling
 import AlertDemo from './inline-styling/01.alert';
 import AlertWithHoverDemo from './inline-styling/02.alert-with-hover';
 import AlertWithVariantDemo from './inline-styling/03.alert-with-variant';
 
-// 5. CSS in JS
+// 4. CSS in JS
 import ProgressDemo from './css-in-js/01.progress';
 import ProgressWithExtendDemo from './css-in-js/02.progress-with-extend';
 import ProgressWithVariantDemo from './css-in-js/03.progress-with-variant';
