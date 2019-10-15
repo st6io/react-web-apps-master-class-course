@@ -1,0 +1,15 @@
+.listWithSelection {
+  list-style: none;
+  min-width: 20rem;
+}
+
+.listWithSelectionItem {
+  padding: .75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.listWithSelectionItem.selected {
+  background-color: skyblue;
+}

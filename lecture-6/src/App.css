@@ -1,0 +1,45 @@
+.App {
+  display: flex;
+  height: 100%;
+}
+
+.App-content {
+  display: flex;
+  flex: 1;
+  padding: 1rem 2rem;
+  overflow-y: auto;
+}
+
+.App-nav {
+  width: 20rem;
+  background-color: #282c34;
+  color: #fff;
+  padding: 1rem 2rem;
+  overflow-y: auto;
+}
+
+.App-nav.collapsed {
+  display: none;
+}
+
+.App-toggle {
+  appearance: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  background-color: transparent;
+  border: 1px solid #ffa60b;
+  color: #ffa60b;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .App-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

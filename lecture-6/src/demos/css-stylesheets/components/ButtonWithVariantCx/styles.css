@@ -1,0 +1,72 @@
+.buttonWithVariantCx {
+  appearance: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  background-color: lightgray;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+  transition: all 0.3s ease-out;
+  border: 0;
+  cursor: pointer;
+}
+
+.buttonWithVariantCx:hover {
+  color: #fff;
+  background-color: darkgray;
+}
+
+/* medium */
+.buttonWithVariantCx.medium {
+  font-size: 1.5rem;
+}
+
+/* large */
+.buttonWithVariantCx.large {
+  font-size: 2rem;
+}
+
+/* primary */
+.buttonWithVariantCx.primary {
+  background-color: skyblue;
+}
+
+.buttonWithVariantCx.primary:hover {
+  background-color: deepskyblue;
+}
+
+/* error */
+.buttonWithVariantCx.error {
+  background-color: coral;
+}
+
+.buttonWithVariantCx.error:hover {
+  background-color: red;
+}
+
+/* success */
+.buttonWithVariantCx.success {
+  background-color: lime;
+}
+
+.buttonWithVariantCx.success:hover {
+  background-color: green;
+}
+
+/* disabled */
+.buttonWithVariantCx.disabled,
+.buttonWithVariantCx.disabled:hover {
+  opacity: 0.5;
+  color: #000;
+  background-color: lightgray;
+}
+
+/* primary large */
+.buttonWithVariantCx.warning {
+  background-color: orange;
+}
+
+.buttonWithVariantCx.warning:hover {
+  background-color: darkorange;
+}

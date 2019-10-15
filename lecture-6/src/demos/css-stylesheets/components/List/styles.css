@@ -1,0 +1,15 @@
+.list {
+  list-style: none;
+  min-width: 20rem;
+}
+
+.listItem {
+  padding: .75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.listItem.selected {
+  background-color: skyblue;
+}

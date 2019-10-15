@@ -1,0 +1,24 @@
+// Slightly lighten a color
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+// Slightly darken a color
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+// Button Variants
+$btn-variants: (
+  primary: $primary,
+  secondary: $secondary,
+  error: $error,
+  success: $success,
+);
+
+// Button Sizes
+$btn-sizes: (
+  small: 1rem,
+  medium: 1.5rem,
+  large: 2rem,
+);

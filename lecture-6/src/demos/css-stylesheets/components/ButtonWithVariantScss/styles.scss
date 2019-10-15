@@ -1,0 +1,33 @@
+@import 'colors';
+@import 'utils';
+@import 'common';
+
+.buttonWithVariantScss {
+  @extend %baseButton;
+
+  // variants
+  @each $variant, $bgColor in $btn-variants {
+    &.#{$variant} {
+      background-color: $bgColor;
+
+      &:hover {
+        background-color: tint($bgColor, 25%);
+      }
+    }
+  }
+
+  // sizes
+  @each $size, $fontSize in $btn-sizes {
+    &.#{$size} {
+      font-size: $fontSize;
+    }
+  }
+
+  /* disabled */
+  &.disabled,
+  &.disabled:hover {
+    opacity: 0.5;
+    background-color: $secondary;
+    color: $black;
+  }
+}

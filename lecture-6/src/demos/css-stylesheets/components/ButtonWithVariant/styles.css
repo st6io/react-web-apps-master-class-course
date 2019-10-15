@@ -1,0 +1,63 @@
+.buttonWithVariant {
+  appearance: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  background-color: lightgray;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+  transition: all 0.3s ease-out;
+  border: 0;
+  cursor: pointer;
+}
+
+.buttonWithVariant:hover {
+  color: #fff;
+  background-color: darkgray;
+}
+
+/* medium */
+.buttonWithVariant.medium {
+  font-size: 1.5rem;
+}
+
+/* large */
+.buttonWithVariant.large {
+  font-size: 2rem;
+}
+
+/* primary */
+.buttonWithVariant.primary {
+  background-color: skyblue;
+}
+
+.buttonWithVariant.primary:hover {
+  background-color: deepskyblue;
+}
+
+/* error */
+.buttonWithVariant.error {
+  background-color: coral;
+}
+
+.buttonWithVariant.error:hover {
+  background-color: red;
+}
+
+/* success */
+.buttonWithVariant.success {
+  background-color: lime;
+}
+
+.buttonWithVariant.success:hover {
+  background-color: green;
+}
+
+/* disabled */
+.buttonWithVariant.disabled,
+.buttonWithVariant.disabled:hover {
+  opacity: 0.5;
+  color: #000;
+  background-color: lightgray;
+}

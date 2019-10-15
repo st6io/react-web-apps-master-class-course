@@ -1,0 +1,15 @@
+%baseButton {
+  appearance: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  font-weight: bold;
+  color: $black;
+  transition: all 0.3s ease-out;
+  border: 0;
+  cursor: pointer;
+
+  &:hover {
+    color: $white;
+  }
+}

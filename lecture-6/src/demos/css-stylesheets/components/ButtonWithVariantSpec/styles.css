@@ -1,0 +1,65 @@
+@import 'colors.css';
+
+.buttonWithVariantSpec {
+  appearance: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  background-color: var(--secondary);
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--black);
+  transition: all 0.3s ease-out;
+  border: 0;
+  cursor: pointer;
+}
+
+.buttonWithVariantSpec:hover {
+  color: var(--white);
+  background-color: var(--secondaryHover);
+}
+
+/* medium */
+.buttonWithVariantSpec.medium {
+  font-size: 1.5rem;
+}
+
+/* large */
+.buttonWithVariantSpec.large {
+  font-size: 2rem;
+}
+
+/* primary */
+.buttonWithVariantSpec.primary {
+  background-color: var(--primary);
+}
+
+.buttonWithVariantSpec.primary:hover {
+  background-color: var(--primaryHover);
+}
+
+/* error */
+.buttonWithVariantSpec.error {
+  background-color: var(--error);
+}
+
+.buttonWithVariantSpec.error:hover {
+  background-color: var(--errorHover);
+}
+
+/* success */
+.buttonWithVariantSpec.success {
+  background-color: var(--success);
+}
+
+.buttonWithVariantSpec.success:hover {
+  background-color: var(--successHover);
+}
+
+/* disabled */
+.buttonWithVariantSpec.disabled,
+.buttonWithVariantSpec.disabled:hover {
+  opacity: 0.5;
+  background-color: var(--secondary);
+  color: var(--black);
+}
