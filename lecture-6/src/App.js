@@ -4,11 +4,11 @@ import {
   Switch,
 } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import cx from 'classnames';
 
 import Nav from './components/Nav';
 import Routes from './components/Routes';
 import demos from './demos';
-import cx from 'classnames';
 
 import './App.css';
 
