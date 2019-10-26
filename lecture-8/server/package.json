@@ -1,0 +1,113 @@
+{
+  "name": "lecture-8-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "lint": "eslint src",
+    "format": "prettier --write \"src/**/*.{js,json}\" \"*.{js,json,md}\""
+  },
+  "dependencies": {
+    "apollo-server": "2.9.3",
+    "apollo-server-express": "2.9.3",
+    "cors": "2.8.5",
+    "dotenv": "8.1.0",
+    "express": "4.17.1",
+    "graphql": "14.5.4",
+    "graphql-iso-date": "3.6.1",
+    "graphql-resolvers": "0.3.3",
+    "graphql.macro": "1.4.2",
+    "jsonwebtoken": "8.5.1",
+    "lodash": "4.17.15",
+    "morgan": "1.9.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.5.5",
+    "@babel/node": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "@babel/register": "7.5.5",
+    "babel-plugin-macros": "2.6.1",
+    "eslint": "6.3.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-config-prettier": "6.2.0",
+    "eslint-import-resolver-alias": "1.1.2",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-prettier": "3.1.0",
+    "husky": "3.0.5",
+    "lint-staged": "9.2.5",
+    "nodemon": "1.19.2",
+    "prettier": "1.18.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "prettier --write",
+      "eslint --max-warnings=0",
+      "git add"
+    ],
+    "src/**/*.{json,gql,graphql}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      "macros"
+    ]
+  },
+  "nodemonConfig": {
+    "verbose": true,
+    "ignore": [
+      "node_modules"
+    ],
+    "env": {
+      "NODE_ENV": "development",
+      "BABEL_DISABLE_CACHE": 1
+    },
+    "execMap": {
+      "js": "babel-node"
+    },
+    "ext": ".js,.gql",
+    "watch": "./src/",
+    "delay": 3000
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "singleQuote": true,
+    "printWidth": 80
+  },
+  "eslintConfig": {
+    "env": {
+      "commonjs": true,
+      "es6": true,
+      "node": true
+    },
+    "extends": [
+      "airbnb-base",
+      "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2018
+    }
+  }
+}

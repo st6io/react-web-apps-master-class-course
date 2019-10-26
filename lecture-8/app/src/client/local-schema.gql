@@ -1,0 +1,11 @@
+extend type Query {
+  authenticated: Boolean!
+}
+
+extend type Mutation {
+  likeCar(carId: ID!): Boolean!
+}
+
+extend type Car {
+  liked: Boolean
+}
