@@ -10,7 +10,7 @@
     "format": "prettier --write \"src/**/*.{js,json}\" \"*.{js,json,md}\""
   },
   "dependencies": {
-    "apollo-server": "2.9.3",
+    "apollo-server": "2.14.2",
     "apollo-server-express": "2.9.3",
     "cors": "2.8.5",
     "dotenv": "8.1.0",
